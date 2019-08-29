@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us - Get&Post</title>
+     <link rel="icon" href="public/images/logo.png" type="image/x-icon"/>
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="   stylesheet" id="bootstrap-css">
+   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="   sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="   anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"    crossorigin="anonymous"></script>
+   <script
+     src="https://code.jquery.com/jquery-3.3.1.min.js"
+     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+     crossorigin="anonymous"></script>
+
+   <link href="https://fonts.googleapis.com/css?family=Lora|Sintony|Viga|Mouse+Memoirs" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="public/contact-style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+       	<img class="logo" src="public/images/logo.png">
+        <a class="nav-link home" href="/"><strong>Home</strong></a>
+	  <div class="heading">
+        <h1 class="lets">Let's</h1><h1> Team Up!</h1>
+      </div>
+      
+      <div class="discription">
+       <h5>Before we begin, we need to know a little more information about you and your project.</h5>
+      </div>
+  <div class="form">
+    <form id='contact-form' method="POST" action="/contact">
+    	 
+       <div class="form-group">
+    	 <label><strong>Name</strong><span class="imp">  *</span></label>
+    	 <br>
+    
+         <div class="row">	
+            <div class="col-sm">
+               <input type="text" class="form-control i-text" name="firstName" required>
+               <label class="below-text">First Name</label>
+            </div>
+            <div class="col-sm">
+               <input type="text" class="form-control i-text" name="lastName" required>
+               <label class="below-text">Last Name</label>
+            </div>
+         </div> 
+         
+         <br>
+         
+         <label><strong>Email</strong><span class="imp">  *</span></label>
+         <br>  
+         
+         <input class="form-control i-text" type="email" name="email" required>
+
+         <br>
+
+         <label><strong>Company</strong></label>
+         <br>  
+         
+         <input class="form-control i-text" type="text" name="company">
+         <br>
+         
+         <label><strong>Project Type</strong><span class="imp">  *</span></label>
+         <br>
+
+         <select name="projectType"  class="custom-select i-text" required>
+             <option selected>Select</option>
+             <option value="Web Design">Web Design</option>
+             <option value="Logo/Branding">Logo/Branding</option>
+             <option value="Illustrations">Illustrations</option>
+             <option value="other">Other</option>
+         </select>
+              <br><br> 
+
+         <label><strong>Project Budget</strong><span class="imp">  *</span></label>
+         <br>  
+         
+         <input class="form-control i-text" type="number" name="budget" placeholder="$" required> 
+         <br>
+    
+    	 <label><strong>Quick Message</strong></label>
+        
+        <textarea name='msg' class="form-control i-text" rows="4" cols="50"></textarea>
+       </div>
+        <button id='btn-submit' class='btn btn-lg btn-dark' type="submit">Submit!</button>
+        <h6 id="result"></h6>
+       </form> 
+
+       </div>
+    
+
+  </div>
+  <script type="text/javascript" src="public/scripts/contact-script.js"></script>
+</body>
+</html>
